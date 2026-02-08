@@ -7,11 +7,11 @@ public class minelementinrow2d
             int m = arr.length;
             int n = arr[0].length;
 
-            int result = Integer.MAX_VALUE;  // final minimum
+            int result = Integer.MAX_VALUE;  
 
             for (int i = 0; i < m; i++) {
 
-                int rowMax = arr[0][0];   // current row ka max
+                int rowMax = arr[0][0];   
 
                 for (int j = 1; j < n; j++) {
                     if (arr[i][j] > rowMax) {
@@ -19,7 +19,7 @@ public class minelementinrow2d
                     }
                 }
 
-                // sabhi rows ke max me se minimum
+        
                 if (rowMax < result) {
                     result = rowMax;
                 }
